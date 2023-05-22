@@ -1,13 +1,17 @@
 {
-    "plugins": [
-      [
-        "module-resolver",
-        {
-          "alias": {
-            "~": "./src"
-          }
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "~": "./src"
         }
-      ]
-    ],
-    "presets": ["@babel/preset-react"]
-  }
+      }
+    ]
+  ],
+  "presets": [
+    ["@babel/preset-react", {
+    "runtime": "automatic"
+    }]
+  ]
+}
