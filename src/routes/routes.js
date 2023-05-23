@@ -7,11 +7,13 @@ import { config } from "~/config";
 // Pages
 const Home = lazy(() => import("~/pages/Home"));
 const NotFound = lazy(() => import("~/pages/NotFound"));
+const MyResume = lazy(() => import("~/pages/MyResume"));
 
 // Public routes
 const publicRoutes = [
   { path: config.routes.home, component: Home },
   { path: "*", component: NotFound, layout: null },
+  { path: config.routes.myResume, component: MyResume},
 ];
 
 const privateRoutes = [
