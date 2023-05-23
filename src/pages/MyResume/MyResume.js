@@ -5,7 +5,7 @@ function MyResume() {
     return ( <>
         <h1>MyResume</h1>
         <PDFViewer 
-            url={MyCV}
+            pdfUrl={MyCV}
         />
     </> );
 }
