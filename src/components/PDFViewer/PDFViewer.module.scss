@@ -1,0 +1,19 @@
+.download-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    word-wrap: break-word;
+    transform: rotate(90deg);
+    padding: 10px 15px;
+    position: fixed;
+    right: -20px;
+    top: 50%;
+    border-radius: 5px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.pdf-document__page{
+    display: flex;
+    justify-content: center;
+}

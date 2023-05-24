@@ -1,0 +1,60 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  overflow-x: none;
+  background-color: white;
+}
+
+:root {
+  --app-scale: 1;
+  --app-mouse-x: 0;
+  --app-mouse-y: 0;
+}
+
+
+.mouse {
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: var(--app-mouse-moving-y);
+  //   left: var(--app-mouse-moving-x);
+  //   width: 60px;
+  //   height: 60px;
+  //   border-radius: 50%;
+  //   z-index: 998;
+  //   pointer-events: none;
+
+  //   border: 1px solid gray;
+  //   mix-blend-mode: difference;
+
+  //   transition: all 200ms linear;
+  // }
+
+  &::after {
+    content: "";
+    position: fixed;
+    top: calc(var(--app-mouse-moving-y) + 15px);
+    left: calc(var(--app-mouse-moving-x) + 15px);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 998;
+    
+    pointer-events: none;
+
+    mix-blend-mode: difference;
+    transition: top 50ms linear, left 50ms linear, transform 300ms ease;
+  }
+
+  &--target {
+    // &::before {
+    //   transform: scale(0.1);
+    // }
+
+    &::after {
+      transform: scale(5);
+    }
+  }
+}
