@@ -1,0 +1,34 @@
+.wrapper{
+    top: 0;
+    left: 0;
+    padding: 2rem 1rem;
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    z-index: 50;
+
+    
+}
+
+.logo_wrapper{
+
+    .logo{
+        height: 35px;
+    }
+}
+
+.action{
+    .link{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #1a1a1a;
+        font-weight: 700;
+    }
+
+    .link:not(:last-child){
+        margin-right: 1rem;
+    }
+}
