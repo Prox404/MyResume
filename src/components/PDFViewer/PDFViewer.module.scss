@@ -2,18 +2,29 @@
     background-color: black;
     color: white;
     border: none;
-    word-wrap: break-word;
-    transform: rotate(90deg);
     padding: 10px 15px;
-    position: fixed;
-    right: -20px;
-    top: 50%;
     border-radius: 5px;
-    z-index: 999;
+    z-index: 9999;
     cursor: pointer;
 }
 
 .pdf-document__page{
     display: flex;
     justify-content: center;
+    
+}
+
+.download-wrapper{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 700px){
+    .pdf-document__page{
+        canvas{
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
 }
