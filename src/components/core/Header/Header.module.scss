@@ -26,9 +26,14 @@
         text-transform: uppercase;
         color: #1a1a1a;
         font-weight: 700;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .link:hover{
+        font-weight:800;
     }
 
     .link:not(:last-child){
-        margin-right: 1rem;
+        margin-right: 15px;
     }
 }
